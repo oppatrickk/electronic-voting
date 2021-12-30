@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Classes.voterFrame">
+  <grid id="27dc6" binding="voterPanel" layout-manager="GridLayoutManager" row-count="13" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="25" left="25" bottom="25" right="25"/>
+    <constraints>
+      <xy x="20" y="20" width="636" height="456"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="29fe0" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Bebas Neue" size="48" style="1"/>
+          <foreground color="-65546"/>
+          <text value="Voter Registration"/>
+        </properties>
+      </component>
+      <component id="8598b" class="javax.swing.JButton" binding="returnButton" default-binding="true">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Return"/>
+        </properties>
+      </component>
+      <component id="f2edf" class="javax.swing.JButton" binding="submitButton" default-binding="true">
+        <constraints>
+          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Submit"/>
+        </properties>
+      </component>
+      <vspacer id="58d29">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="82365">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="38faf" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="57" height="63"/>
+          </grid>
+        </constraints>
+        <properties>
+          <foreground color="-525569"/>
+          <text value="First Name"/>
+        </properties>
+      </component>
+      <component id="8db3f" class="javax.swing.JTextField" binding="inputFirstName">
+        <constraints>
+          <grid row="4" column="0" row-span="2" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="29"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <vspacer id="2f552">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="11" height="14"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="9061e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-525569"/>
+          <text value="Birthdate"/>
+        </properties>
+      </component>
+      <component id="13898" class="javax.swing.JTextField" binding="inputLastName">
+        <constraints>
+          <grid row="4" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="29"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="25599" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="56" height="63"/>
+          </grid>
+        </constraints>
+        <properties>
+          <foreground color="-525825"/>
+          <text value="Last Name"/>
+        </properties>
+      </component>
+      <component id="12dd8" class="javax.swing.JComboBox" binding="birthDate">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="1920"/>
+            <item value="1921"/>
+            <item value="1922"/>
+            <item value="1923"/>
+            <item value="1924"/>
+            <item value="1925"/>
+            <item value="1926"/>
+            <item value="1927"/>
+            <item value="1928"/>
+            <item value="1929"/>
+            <item value="1930"/>
+            <item value="1931"/>
+            <item value="1932"/>
+            <item value="1933"/>
+            <item value="1934"/>
+            <item value="1935"/>
+            <item value="1936"/>
+            <item value="1937"/>
+            <item value="1938"/>
+            <item value="1939"/>
+            <item value="1940"/>
+            <item value="1941"/>
+            <item value="1942"/>
+            <item value="1943"/>
+            <item value="1944"/>
+            <item value="1945"/>
+            <item value="1946"/>
+            <item value="1947"/>
+            <item value="1948"/>
+            <item value="1949"/>
+            <item value="1950"/>
+            <item value="1951"/>
+            <item value="1952"/>
+            <item value="1953"/>
+            <item value="1954"/>
+            <item value="1955"/>
+            <item value="1956"/>
+            <item value="1957"/>
+            <item value="1958"/>
+            <item value="1959"/>
+            <item value="1960"/>
+            <item value="1961"/>
+            <item value="1962"/>
+            <item value="1963"/>
+            <item value="1964"/>
+            <item value="1965"/>
+            <item value="1966"/>
+            <item value="1967"/>
+            <item value="1968"/>
+            <item value="1969"/>
+            <item value="1970"/>
+            <item value="1971"/>
+            <item value="1972"/>
+            <item value="1973"/>
+            <item value="1974"/>
+            <item value="1975"/>
+            <item value="1976"/>
+            <item value="1977"/>
+            <item value="1978"/>
+            <item value="1979"/>
+            <item value="1980"/>
+            <item value="1981"/>
+            <item value="1982"/>
+            <item value="1983"/>
+            <item value="1984"/>
+            <item value="1985"/>
+            <item value="1986"/>
+            <item value="1987"/>
+            <item value="1988"/>
+            <item value="1989"/>
+            <item value="1990"/>
+            <item value="1991"/>
+            <item value="1992"/>
+            <item value="1993"/>
+            <item value="1994"/>
+            <item value="1995"/>
+            <item value="1996"/>
+            <item value="1997"/>
+            <item value="1998"/>
+            <item value="1999"/>
+            <item value="2000"/>
+            <item value="2001"/>
+            <item value="2002"/>
+            <item value="2003"/>
+            <item value="2004"/>
+            <item value="2005"/>
+            <item value="2006"/>
+            <item value="2007"/>
+            <item value="2008"/>
+            <item value="2009"/>
+            <item value="2010"/>
+            <item value="2011"/>
+            <item value="2012"/>
+            <item value="2013"/>
+            <item value="2014"/>
+            <item value="2015"/>
+            <item value="2016"/>
+            <item value="2017"/>
+            <item value="2018"/>
+            <item value="2019"/>
+            <item value="2020"/>
+            <item value="2021"/>
+            <item value="2022"/>
+          </model>
+        </properties>
+      </component>
+      <component id="27022" class="javax.swing.JLabel" binding="error1">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="10"/>
+          <foreground color="-65531"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="9cfa5" class="javax.swing.JLabel" binding="error2">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="10"/>
+          <foreground color="-65531"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="3b49f" class="javax.swing.JLabel" binding="error3">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="10"/>
+          <foreground color="-65531"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="8f8f3" class="javax.swing.JLabel" binding="success">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="10"/>
+          <foreground color="-15597824"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

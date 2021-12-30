@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Classes.votingFrame">
+  <grid id="27dc6" binding="votingPanel" layout-manager="GridLayoutManager" row-count="25" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="25" left="25" bottom="25" right="25"/>
+    <constraints>
+      <xy x="20" y="20" width="492" height="788"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="9acd3" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Bebas Neue" size="48" style="1"/>
+          <foreground color="-460033"/>
+          <text value="Voting"/>
+        </properties>
+      </component>
+      <component id="478c0" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-460033"/>
+          <text value="President"/>
+        </properties>
+      </component>
+      <component id="5d854" class="javax.swing.JComboBox" binding="presidentBox">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="5c1bb" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-460033"/>
+          <text value="Vice-President"/>
+        </properties>
+      </component>
+      <component id="86753" class="javax.swing.JComboBox" binding="vicepresBox">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="7c5e4" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-525569"/>
+          <text value=" Senators (12 max)"/>
+        </properties>
+      </component>
+      <vspacer id="1d85a">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="2d0ff">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="d39ec">
+        <constraints>
+          <grid row="23" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="47176">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="cf86f">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="cb8ea">
+        <constraints>
+          <grid row="15" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="11" height="16"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="1423" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+        <constraints>
+          <grid row="15" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="78" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="59d23" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
+        <constraints>
+          <grid row="15" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="78" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="4f8a7" class="javax.swing.JComboBox" binding="comboBox3" default-binding="true">
+        <constraints>
+          <grid row="16" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="1191a" class="javax.swing.JComboBox" binding="comboBox4">
+        <constraints>
+          <grid row="16" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="50598" class="javax.swing.JComboBox" binding="comboBox7">
+        <constraints>
+          <grid row="18" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="59315" class="javax.swing.JComboBox" binding="comboBox9">
+        <constraints>
+          <grid row="19" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="8142" class="javax.swing.JComboBox" binding="comboBox6">
+        <constraints>
+          <grid row="17" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="89b32" class="javax.swing.JComboBox" binding="comboBox5">
+        <constraints>
+          <grid row="17" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="a27aa" class="javax.swing.JComboBox" binding="comboBox8">
+        <constraints>
+          <grid row="18" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="49af5" class="javax.swing.JComboBox" binding="comboBox10">
+        <constraints>
+          <grid row="19" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="591e0" class="javax.swing.JComboBox" binding="comboBox11">
+        <constraints>
+          <grid row="20" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <component id="e50a0" class="javax.swing.JComboBox" binding="comboBox12">
+        <constraints>
+          <grid row="20" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="- SELECT -"/>
+            <item value="Abstain"/>
+          </model>
+        </properties>
+      </component>
+      <vspacer id="aa990">
+        <constraints>
+          <grid row="16" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="53dd7">
+        <constraints>
+          <grid row="17" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="da9e3">
+        <constraints>
+          <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="2698d">
+        <constraints>
+          <grid row="19" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="668a7">
+        <constraints>
+          <grid row="20" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="72323" class="javax.swing.JButton" binding="returnButton" default-binding="true">
+        <constraints>
+          <grid row="24" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Return"/>
+        </properties>
+      </component>
+      <component id="201e6" class="javax.swing.JButton" binding="submitButton">
+        <constraints>
+          <grid row="24" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Submit"/>
+        </properties>
+      </component>
+      <vspacer id="d7748">
+        <constraints>
+          <grid row="22" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="81257" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-460033"/>
+          <text value="First Name"/>
+        </properties>
+      </component>
+      <component id="da147" class="javax.swing.JTextField" binding="inputFirstName">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="f4788" class="javax.swing.JTextField" binding="inputLastName">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="e923b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-460033"/>
+          <text value="Last Name"/>
+        </properties>
+      </component>
+      <vspacer id="6b596">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="f8c28" class="javax.swing.JLabel" binding="error1">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="10"/>
+          <foreground color="-65527"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="283a7" class="javax.swing.JLabel" binding="error2">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="10"/>
+          <foreground color="-65527"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="61b17" class="javax.swing.JLabel" binding="error3">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="10"/>
+          <foreground color="-65527"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="53213" class="javax.swing.JLabel" binding="error4">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="10"/>
+          <foreground color="-65527"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="22fbc" class="javax.swing.JLabel" binding="error5">
+        <constraints>
+          <grid row="21" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="10"/>
+          <foreground color="-65527"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="3c3e2" class="javax.swing.JLabel" binding="successMsg">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="10"/>
+          <foreground color="-16711890"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
