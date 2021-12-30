@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="electronic-voting:jar">
+  <artifact type="jar" name="electronic-voting:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/electronic_voting_jar</output-path>
     <root id="archive" name="electronic-voting.jar">
       <element id="module-output" name="electronic-voting" />
