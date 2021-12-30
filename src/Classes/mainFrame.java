@@ -25,10 +25,6 @@ public class mainFrame extends JFrame{
         getContentPane().setBackground(new java.awt.Color(38,44,59));
         setLocationRelativeTo(null);
 
-        if(Election.electionPeriod){
-            dispose();
-        }
-
         // Listener
         voteButton.addActionListener(new ActionListener() {
             @Override

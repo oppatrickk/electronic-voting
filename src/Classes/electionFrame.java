@@ -56,5 +56,15 @@ public class electionFrame extends JFrame{
                 voterListFrame myApp = new voterListFrame();
             }
         });
+
+        partialTallyButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setVisible(false);
+                dispose();
+
+                tallyFrame myApp = new tallyFrame();
+            }
+        });
     }
 }

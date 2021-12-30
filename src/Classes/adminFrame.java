@@ -12,7 +12,6 @@ import java.util.Arrays;
 public class adminFrame extends JFrame{
     // GUI
     private JButton startElectionButton;
-    private JButton endElectionButton;
     private JPanel adminPanel;
     private JLabel errorMsg;
     private JLabel statusMsg;
@@ -57,31 +56,8 @@ public class adminFrame extends JFrame{
                     }
                 }
                 else{
-                    errorMsg.setText("There must be at least 25 voters");
+                    errorMsg.setText("There must be at least 25 registered voters");
                 }
-            }
-        });
-        endElectionButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                statusMsg.setText("Current Status: Election Period");
-                errorMsg.setText("");
-
-                Arrays.asList(Window.getWindows()).forEach(b -> b.dispose());
-                Election.electionPeriod = true;
-                electionFrame myApp = new electionFrame();
-                adminFrame adminApp = new adminFrame();
-
-                /*
-                if(Election.electionPeriod){
-                    statusMsg.setText("Current Status: Election Ended");
-                }
-                else{
-                    errorMsg.setText("The election has not yet started");
-                }
-                 */
-
             }
         });
     }

@@ -136,8 +136,11 @@ public class votingFrame extends JFrame{
         submitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                successMsg.setText("");
+
                 String firstNameValue = inputFirstName.getText();
                 String lastNameValue = inputLastName.getText();
+
                 int check = 0;
                 int i = 0;
 
@@ -165,13 +168,12 @@ public class votingFrame extends JFrame{
                     if((Voter.firstName[i] + " " + Voter.lastName[i]).equals(firstNameValue + " " + lastNameValue)){
                         if(Voter.voted[i] == 1){
                             error1.setText("You already voted!");
-                            break;
                         }
                         else{
                             error1.setText("");
                             check++;
-                            break;
                         }
+                        break;
                     }
                     else{
                         error1.setText("Name not Found!");
@@ -179,25 +181,19 @@ public class votingFrame extends JFrame{
                 }
 
                 // President
-                switch(Objects.requireNonNull(presidentBox.getSelectedItem()).toString()){
-                    case "- SELECT -":
-                        error3.setText("Please select President");
-                        break;
-                    default:
-                        error3.setText("");
-                        check++;
-                        break;
+                if ("- SELECT -".equals(Objects.requireNonNull(presidentBox.getSelectedItem()).toString())) {
+                    error3.setText("Please select President");
+                } else {
+                    error3.setText("");
+                    check++;
                 }
 
                 // Vice President
-                switch(Objects.requireNonNull(vicepresBox.getSelectedItem()).toString()){
-                    case "- SELECT -":
-                        error4.setText("Please select Vice-President");
-                        break;
-                    default:
-                        error4.setText("");
-                        check++;
-                        break;
+                if ("- SELECT -".equals(Objects.requireNonNull(vicepresBox.getSelectedItem()).toString())) {
+                    error4.setText("Please select Vice-President");
+                } else {
+                    error4.setText("");
+                    check++;
                 }
 
                 // Senators
@@ -252,9 +248,222 @@ public class votingFrame extends JFrame{
                     }
                 }
 
+                String combo1 = Objects.requireNonNull(comboBox1.getSelectedItem()).toString();
+                String combo2 = Objects.requireNonNull(comboBox2.getSelectedItem()).toString();
+                String combo3 = Objects.requireNonNull(comboBox3.getSelectedItem()).toString();
+                String combo4 = Objects.requireNonNull(comboBox4.getSelectedItem()).toString();
+                String combo5 = Objects.requireNonNull(comboBox5.getSelectedItem()).toString();
+                String combo6 = Objects.requireNonNull(comboBox6.getSelectedItem()).toString();
+                String combo7 = Objects.requireNonNull(comboBox7.getSelectedItem()).toString();
+                String combo8 = Objects.requireNonNull(comboBox8.getSelectedItem()).toString();
+                String combo9 = Objects.requireNonNull(comboBox9.getSelectedItem()).toString();
+                String combo10 = Objects.requireNonNull(comboBox10.getSelectedItem()).toString();
+                String combo11 = Objects.requireNonNull(comboBox11.getSelectedItem()).toString();
+                String combo12 = Objects.requireNonNull(comboBox12.getSelectedItem()).toString();
 
-                if(check == 4){
+                // Check for duplicates
+                if (Objects.equals(combo1, combo2) ||
+                        Objects.equals(combo1, combo3) ||
+                        Objects.equals(combo1, combo4) ||
+                        Objects.equals(combo1, combo5) ||
+                        Objects.equals(combo1, combo6) ||
+                        Objects.equals(combo1, combo7) ||
+                        Objects.equals(combo1, combo8) ||
+                        Objects.equals(combo1, combo9) ||
+                        Objects.equals(combo1, combo10) ||
+                        Objects.equals(combo1, combo11) ||
+                        Objects.equals(combo1, combo12)) {
+                    error5.setText("Duplicate Selection");
+                } else if (Objects.equals(combo2, combo1) ||
+                        Objects.equals(combo2, combo3) ||
+                        Objects.equals(combo2, combo4) ||
+                        Objects.equals(combo2, combo5) ||
+                        Objects.equals(combo2, combo6) ||
+                        Objects.equals(combo2, combo7) ||
+                        Objects.equals(combo2, combo8) ||
+                        Objects.equals(combo2, combo9) ||
+                        Objects.equals(combo2, combo10) ||
+                        Objects.equals(combo2, combo11) ||
+                        Objects.equals(combo2, combo12)) {
+                    error5.setText("Duplicate Selection");
+                } else if (Objects.equals(combo3, combo1) ||
+                        Objects.equals(combo3, combo2) ||
+                        Objects.equals(combo3, combo4) ||
+                        Objects.equals(combo3, combo5) ||
+                        Objects.equals(combo3, combo6) ||
+                        Objects.equals(combo3, combo7) ||
+                        Objects.equals(combo3, combo8) ||
+                        Objects.equals(combo3, combo9) ||
+                        Objects.equals(combo3, combo10) ||
+                        Objects.equals(combo3, combo11) ||
+                        Objects.equals(combo3, combo12)) {
+                    error5.setText("Duplicate Selection");
+                } else if (Objects.equals(combo4, combo2) ||
+                        Objects.equals(combo4, combo3) ||
+                        Objects.equals(combo4, combo1) ||
+                        Objects.equals(combo4, combo5) ||
+                        Objects.equals(combo4, combo6) ||
+                        Objects.equals(combo4, combo7) ||
+                        Objects.equals(combo4, combo8) ||
+                        Objects.equals(combo4, combo9) ||
+                        Objects.equals(combo4, combo10) ||
+                        Objects.equals(combo4, combo11) ||
+                        Objects.equals(combo4, combo12)) {
+                    error5.setText("Duplicate Selection");
+                } else if (Objects.equals(combo5, combo2) ||
+                        Objects.equals(combo5, combo3) ||
+                        Objects.equals(combo5, combo4) ||
+                        Objects.equals(combo5, combo1) ||
+                        Objects.equals(combo5, combo6) ||
+                        Objects.equals(combo5, combo7) ||
+                        Objects.equals(combo5, combo8) ||
+                        Objects.equals(combo5, combo9) ||
+                        Objects.equals(combo5, combo10) ||
+                        Objects.equals(combo5, combo11) ||
+                        Objects.equals(combo5, combo12)) {
+                    error5.setText("Duplicate Selection");
+                } else if (Objects.equals(combo6, combo2) ||
+                        Objects.equals(combo6, combo3) ||
+                        Objects.equals(combo6, combo4) ||
+                        Objects.equals(combo6, combo5) ||
+                        Objects.equals(combo6, combo1) ||
+                        Objects.equals(combo6, combo7) ||
+                        Objects.equals(combo6, combo8) ||
+                        Objects.equals(combo6, combo9) ||
+                        Objects.equals(combo6, combo10) ||
+                        Objects.equals(combo6, combo11) ||
+                        Objects.equals(combo6, combo12)) {
+                    error5.setText("Duplicate Selection");
+                } else if (Objects.equals(combo7, combo2) ||
+                        Objects.equals(combo7, combo3) ||
+                        Objects.equals(combo7, combo4) ||
+                        Objects.equals(combo7, combo5) ||
+                        Objects.equals(combo7, combo6) ||
+                        Objects.equals(combo7, combo1) ||
+                        Objects.equals(combo7, combo8) ||
+                        Objects.equals(combo7, combo9) ||
+                        Objects.equals(combo7, combo10) ||
+                        Objects.equals(combo7, combo11) ||
+                        Objects.equals(combo7, combo12)) {
+                    error5.setText("Duplicate Selection");
+                } else if (Objects.equals(combo8, combo2) ||
+                        Objects.equals(combo8, combo3) ||
+                        Objects.equals(combo8, combo4) ||
+                        Objects.equals(combo8, combo5) ||
+                        Objects.equals(combo8, combo6) ||
+                        Objects.equals(combo8, combo7) ||
+                        Objects.equals(combo8, combo1) ||
+                        Objects.equals(combo8, combo9) ||
+                        Objects.equals(combo8, combo10) ||
+                        Objects.equals(combo8, combo11) ||
+                        Objects.equals(combo8, combo12)) {
+                    error5.setText("Duplicate Selection");
+                } else if (Objects.equals(combo9, combo2) ||
+                        Objects.equals(combo9, combo3) ||
+                        Objects.equals(combo9, combo4) ||
+                        Objects.equals(combo9, combo5) ||
+                        Objects.equals(combo9, combo6) ||
+                        Objects.equals(combo9, combo7) ||
+                        Objects.equals(combo9, combo8) ||
+                        Objects.equals(combo9, combo1) ||
+                        Objects.equals(combo9, combo10) ||
+                        Objects.equals(combo9, combo11) ||
+                        Objects.equals(combo9, combo12)) {
+                    error5.setText("Duplicate Selection");
+                } else if (Objects.equals(combo10, combo2) ||
+                        Objects.equals(combo10, combo3) ||
+                        Objects.equals(combo10, combo4) ||
+                        Objects.equals(combo10, combo5) ||
+                        Objects.equals(combo10, combo6) ||
+                        Objects.equals(combo10, combo7) ||
+                        Objects.equals(combo10, combo8) ||
+                        Objects.equals(combo10, combo9) ||
+                        Objects.equals(combo10, combo1) ||
+                        Objects.equals(combo10, combo11) ||
+                        Objects.equals(combo10, combo12)) {
+                    error5.setText("Duplicate Selection");
+                } else if (Objects.equals(combo11, combo2) ||
+                        Objects.equals(combo11, combo3) ||
+                        Objects.equals(combo11, combo4) ||
+                        Objects.equals(combo11, combo5) ||
+                        Objects.equals(combo11, combo6) ||
+                        Objects.equals(combo11, combo7) ||
+                        Objects.equals(combo11, combo8) ||
+                        Objects.equals(combo11, combo9) ||
+                        Objects.equals(combo11, combo10) ||
+                        Objects.equals(combo11, combo1) ||
+                        Objects.equals(combo11, combo12)) {
+                    error5.setText("Duplicate Selection");
+                } else if (Objects.equals(combo12, combo2) ||
+                        Objects.equals(combo12, combo3) ||
+                        Objects.equals(combo12, combo4) ||
+                        Objects.equals(combo12, combo5) ||
+                        Objects.equals(combo12, combo6) ||
+                        Objects.equals(combo12, combo7) ||
+                        Objects.equals(combo12, combo8) ||
+                        Objects.equals(combo12, combo9) ||
+                        Objects.equals(combo12, combo10) ||
+                        Objects.equals(combo12, combo11) ||
+                        Objects.equals(combo12, combo1)) {
+                    error5.setText("Duplicate Selection");
+                } else{
+                    error5.setText("");
+                    check++;
+                }
+
+                    // Final Check
+                if(check == 5){
                     successMsg.setText("Vote Complete!");
+
+                    // Set Votes
+                    for(int j = 0; j <= Candidate.count; j++){
+                        // President
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(presidentBox.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                        // Vice-President
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(vicepresBox.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+
+                        // Senators
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(comboBox1.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(comboBox2.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(comboBox3.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(comboBox4.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(comboBox5.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(comboBox6.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(comboBox7.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(comboBox8.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(comboBox9.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(comboBox10.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(comboBox11.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                        if((Candidate.firstName[i] + " " + Candidate.lastName[i]).equals(Objects.requireNonNull(comboBox12.getSelectedItem()).toString())){
+                            Candidate.votes[i]++;
+                        }
+                    }
 
                     // Reset
                     inputLastName.setText("");

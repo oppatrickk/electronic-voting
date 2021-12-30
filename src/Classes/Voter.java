@@ -10,6 +10,6 @@ public class Voter {
 
     public static int count = 0;
 
-    public static int[] voted = new int[1];
+    public static int[] voted = new int[100];
 
 }

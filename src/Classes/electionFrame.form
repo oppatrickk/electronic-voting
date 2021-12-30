@@ -87,7 +87,7 @@
             <properties>
               <font size="8"/>
               <foreground color="-1249549"/>
-              <text value="Version 1.0"/>
+              <text value="Version 1.1"/>
             </properties>
           </component>
           <component id="4227f" class="javax.swing.JLabel">

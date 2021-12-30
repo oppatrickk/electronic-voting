@@ -23,6 +23,7 @@ public class Candidate {
     public static int qualifiedSenatorCount = 0;
 
     // Election
+    public static int[] votes = new int[100];
 
 
 
