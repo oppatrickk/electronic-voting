@@ -1,7 +1,7 @@
 # Electronic Voting System
 Java Application that will simulate a voting system <br><br>
 
-###Filing of Candidacy
+### Filing of Candidacy
 Data needed:
 - Full name
 - Political Party
@@ -11,7 +11,7 @@ Data needed:
 
 <br>
 
-###VALIDATION OF CANDIDATES
+### VALIDATION OF CANDIDATES
 Display the data of qualified and disqualified list candidates. <br>
 For disqualified candidates, display the reason(s) of disqualification. <br>
 Group them by their selected position to run.
